@@ -8,6 +8,7 @@ import com.mucheng.mucute.client.game.module.effect.LevitationModule
 import com.mucheng.mucute.client.game.module.effect.PoseidonModule
 import com.mucheng.mucute.client.game.module.effect.RegenModule
 import com.mucheng.mucute.client.game.module.misc.NoClipModule
+import com.mucheng.mucute.client.game.module.misc.ClipModule
 import com.mucheng.mucute.client.game.module.motion.AirJumpModule
 import com.mucheng.mucute.client.game.module.motion.AutoJumpModule
 import com.mucheng.mucute.client.game.module.motion.AutoWalkModule
@@ -53,6 +54,7 @@ object ModuleManager : MuCuteRelayPacketListener {
             add(ZoomModule())
             add(AirJumpModule())
             add(NoClipModule())
+            add(ClipModule())
             add(NightVisionModule())
             add(HasteModule())
             add(SpeedModule())
