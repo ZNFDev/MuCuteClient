@@ -15,6 +15,7 @@ import org.cloudburstmc.protocol.bedrock.packet.*
 import java.util.*
 import kotlin.math.atan2
 import kotlin.math.floor
+import com.mucheng.mucute.relay.MuCuteRelaySession
 
 @Suppress("MemberVisibilityCanBePrivate")
 class LocalPlayer : Player(0L, 0L, UUID.randomUUID(), "") {
@@ -50,7 +51,7 @@ class LocalPlayer : Player(0L, 0L, UUID.randomUUID(), "") {
             rotation = Vector3f.from(rotationPitch, rotationYaw, 0f)
             //if (rideEntity != null) {
 			//	ridingRuntimeEntityId = rideEntity!!
-			mode = MovePlayerPacket.Mode.HEAD_ROTATION
+	    mode = MovePlayerPacket.Mode.HEAD_ROTATION
 			/*} else {
 				mode = MovePlayerPacket.Mode.NORMAL
 			}*/
