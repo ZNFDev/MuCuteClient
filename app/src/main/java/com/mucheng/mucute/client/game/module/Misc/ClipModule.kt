@@ -15,12 +15,12 @@ import kotlin.math.sin
 class ClipModule : Module("clip", ModuleCategory.Misc) {
 
     override fun onReceived(packet: BedrockPacket): Boolean {
-        if (!session.netSessionInitialized && isEnabled) return false
+        //if (isInGame)
 
-    		val player = session.player
+    		val player = localPlayer
     		val yaw = Math.toRadians(player.rotationYaw.toDouble()).toFloat()
     
-    		player.teleport(player.posX - sin(yaw) * 3f, player.posY + 3f, player.posZ + cos(yaw) * 3f)
+    		player.teleport(session, player.posX - sin(yaw) * 3f, player.posY + 3f, player.posZ + cos(yaw) * 3f)
     	}
         return false
     }
