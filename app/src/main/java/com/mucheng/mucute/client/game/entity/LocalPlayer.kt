@@ -59,7 +59,7 @@ class LocalPlayer : Player(0L, 0L, UUID.randomUUID(), "") {
     }
 
 	fun teleport(session: MuCuteRelaySession, vec3: Vector3f) {
-		teleport(vec3.x, vec3.y, vec3.z)
+		teleport(session, vec3.x, vec3.y, vec3.z)
     }
 
 }
