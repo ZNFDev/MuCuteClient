@@ -2,7 +2,7 @@ package com.mucheng.mucute.client.game.module.misc
 
 import com.mucheng.mucute.client.game.Module
 import com.mucheng.mucute.client.game.ModuleCategory
-import org.cloudburstmc.protocol.bedrock.packet.BedrockPacket
+//import org.cloudburstmc.protocol.bedrock.packet.BedrockPacket
 import kotlin.math.cos
 import kotlin.math.sin
 import com.mucheng.mucute.relay.MuCuteRelaySession
@@ -21,7 +21,7 @@ import org.cloudburstmc.protocol.bedrock.packet.*
 import java.util.*
 import kotlin.math.atan2
 import kotlin.math.floor
-import com.mucheng.mucute.relay.MuCuteRelaySession
+//import com.mucheng.mucute.relay.MuCuteRelaySession
 
 class ClipModule : Module("Clip", ModuleCategory.Misc) {
 
