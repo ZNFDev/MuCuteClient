@@ -43,23 +43,4 @@ class LocalPlayer : Player(0L, 0L, UUID.randomUUID(), "") {
         reset()
     }
 
-    fun teleport(session: MuCuteRelaySession, x: Float, y: Float, z: Float) {
-        move(x, y, z)
-        session.clientBound(MovePlayerPacket().apply {
-            runtimeEntityId = this@LocalPlayer.runtimeEntityId
-            position = Vector3f.from(x, y, z)
-            rotation = Vector3f.from(rotationPitch, rotationYaw, 0f)
-            //if (rideEntity != null) {
-			//	ridingRuntimeEntityId = rideEntity!!
-	    mode = MovePlayerPacket.Mode.HEAD_ROTATION
-			/*} else {
-				mode = MovePlayerPacket.Mode.NORMAL
-			}*/
-        })
-    }
-
-	fun teleport(session: MuCuteRelaySession, vec3: Vector3f) {
-		teleport(session, vec3.x, vec3.y, vec3.z)
-    }
-
 }
